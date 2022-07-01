@@ -3,72 +3,79 @@
 <head>
 	<meta charset="utf-8">
 	<title>CeciliaWangDesign</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+ 	<link rel="stylesheet" type="text/css" href="css/style.css">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	 <!-- font -->
+ 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
 </head>
 
 <body>
 
 	<header>
-		<div>
-			<img src="images/home/Sitelogo.png">
+		<div id="navigation">
+			<div>
+				<img src="images/home/Sitelogo.png">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="">Work</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="">Work</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
 	</header>
 
 	<main>
-		<div>
-			<h1>Hi! I am Cecilia Wang<br>A UX designer and thinker who focuses on simplicity and clarity.</h1>
-		</div>
-		<br>
+		<div id="home-main">
+			<div>
+				<h1>Hi! I am Cecilia Wang<br>A UX designer and thinker who focuses on simplicity and clarity.</h1>
+			</div>
+			<br>
 
-	    <!-- start of work section -->
-	    <div><h2>Work</h2></div>
+		    <!-- start of work section -->
+		    <div><h2>Work</h2></div>
 
-		<div> <!-- Project 1 two columns -->
+			<div> <!-- Project 1 two columns -->
 
-			<div> <!-- Project description -->
-				<h2>KidDoc</h2>
-				<h3>
-					A mobile-first design of consultation service for children’s health
-				</h3>
-				<h4>#USER RESEARCH #UX #UI #DESIGN STRATEGY</h4>
-				<a href="KidDoc.html">Learn more</a>
+				<div> <!-- Project description -->
+					<h2>KidDoc</h2>
+					<h3>
+						A mobile-first design of consultation service for children’s health
+					</h3>
+					<h4>#USER RESEARCH #UX #UI #DESIGN STRATEGY</h4>
+					<a href="KidDoc.html" class=button>Learn more</a>
+				</div>
+
+				<div> <!-- Project picture -->
+					<a href="KidDoc.html"><picture>
+			              <source srcset="images/home/case study1_600.jpg" media="(max-width:767px)">
+			              <img src="images/home/case study1_1200.jpg" alt="kidDoc image">
+			        </picture></a>
+		    	</div>
+
 			</div>
 
-			<div> <!-- Project picture -->
-				<a href="KidDoc.html"><picture>
-		              <source srcset="images/home/case study1_600.jpg" media="(max-width:767px)">
-		              <img src="images/home/case study1_1200.jpg" alt="kidDoc image">
-		        </picture></a>
-	    	</div>
+			<div> <!-- Project 2 two columns -->
 
-		</div>
+				<div> <!-- Project description -->
+					<h2>WordUni</h2>
+					<h3>
+						A vocabulary app that assists higher education learning
+					</h3>
+					<h4>#USER RESEARCH #UX #UI #DESIGN STRATEGY</h4>
+					<a href=""class=button>Learn more</a>
+				</div>
 
-		<div> <!-- Project 2 two columns -->
-
-			<div> <!-- Project description -->
-				<h2>WordUni</h2>
-				<h3>
-					A vocabulary app that assists higher education learning
-				</h3>
-				<h4>#USER RESEARCH #UX #UI #DESIGN STRATEGY</h4>
-				<a href="">Learn more</a>
+				<div> <!-- Project picture -->
+					<picture>
+			            <source srcset="images/home/case study2_600.jpg" media="(max-width:767px)">
+			            <img src="images/home/case study2_1200.jpg" alt="WordUni image">
+			        </picture>
+				</div>
 			</div>
-
-			<div> <!-- Project picture -->
-				<picture>
-		            <source srcset="images/home/case study2_600.jpg" media="(max-width:767px)">
-		            <img src="images/home/case study2_1200.jpg" alt="WordUni image">
-		        </picture>
-			</div>
-
 		</div>
-
 		<!-- end of work section -->
 	</main>
 
@@ -77,7 +84,7 @@
 
 	<footer id="contact">
 		<h2>Let's work together</h2>
-		<h3>Contact me at xinranwangx@gmail.com</h3>
+		<h3>Contact me at <a href="mailto:xinranwangx@gmail.com" class="button contact">xinranwangx@gmail.com</a></h3>
 		<p>Social Media Links </p>
 		<div>
 		<ul>
