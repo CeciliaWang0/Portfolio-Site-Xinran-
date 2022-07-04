@@ -6,11 +6,11 @@ White: #FFFFFF
 */
 
 
-img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+html {
+
+scroll-behavior: smooth;
 }
+
 
 /* ---------------Font Family and sizes ---------------------*/
 body {
@@ -22,12 +22,18 @@ body {
   color: #161D1C;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.5;
 }
 
 h1 {
-  font-size: 2.841em;
+  font-size: 2.741em;
   font-weight: 700;
 }
 
@@ -65,12 +71,14 @@ a:hover {
   font-weight: 600;
   padding: 15px 25px 15px 25px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition: background-color 0.3s ease; 
 }
+
 .button:hover {
   background-color: #8276F4;
   color: #FFFFFF;  
   text-decoration: none;
+  font-weight: 600;
 }
 
 /* ---------------Email link styling ---------------------*/
@@ -125,7 +133,6 @@ header {
 }
 
 header ul {
-  text-align: center;
   list-style-type: none;
   float: right;
   margin-top: 35px;
@@ -145,17 +152,16 @@ header nav ul li a {
 
 /* --------------- Hero ---------------------*/
 
-#index-hero #project1-hero #contact-hero{
-  text-align: left;
-  background-color: #ffffff;
-  display: inline-block;
-  width: 100%;
-}
-
-
 #project1-hero h1{text-align: center;
   padding: 20px 0px;
 }
+#contact-hero .resume-button {
+  padding: 40px 0px;
+}
+#contact-hero img {
+  padding: 0px 40px 0px 0px;
+} 
+
 
 /* ---------------Footer ---------------------*/
 
@@ -176,3 +182,98 @@ footer ul li {
   margin-left: 30px;
 }
 
+/* ---------------CSS Grid---------------------*/
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+   header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+.col-md-6 {
+  width: 50%;
+  }
+#contact-hero h1 { margin-top: 0;}
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+.col-lg-7 {
+  width: 58.33%;
+  }  
+.col-lg-5 {
+  width: 41.66%;
+  }  
+#contact-hero h1 { margin-top: 0;}
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+.col-lg-7 {
+  width: 58.33%;
+  }  
+.col-lg-5 {
+  width: 41.66%;
+  }  
+} 
+
+[class*="col-"] {
+  float: left;
+  padding: 0px 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* ---------------SVG animation---------------------*/
+
+#index-hero svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
