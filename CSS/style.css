@@ -82,12 +82,13 @@ a:hover {
 }
 
 /* ---------------Email link styling ---------------------*/
-.button.contact {
+.email-link {
   background-color: transparent;
   color: #161D1C;
+  font-size:1.1em;
 }
 
-.button.contact:hover {
+.email-link:hover {
   background-color: transparent;
   color: #8276F4;
   text-decoration: underline;
@@ -172,15 +173,16 @@ footer{
 
 footer ul {
   list-style-type: none;
-  margin: 0;
+  margin: 20px 0px 20px -20px;
   padding: 0;
-  float: right;
 }
 
 footer ul li {
   display: inline-block;
   margin-left: 30px;
 }
+
+
 
 /* ---------------CSS Grid---------------------*/
 /* ==============================
@@ -192,17 +194,25 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-  nav {
+    nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-.col-md-6 {
-  width: 50%;
+    .col-md-6 {
+    width: 50%;
   }
-#contact-hero h1 { margin-top: 0;}
-}
 
+  #contact-hero h1 { margin-top: 0;}
+
+  footer ul {
+    float: right;
+    }
+
+   #contact h3 {
+    display: inline;
+    }
+  }
 
 /* ==============================
 Large devices (1024px or larger)
