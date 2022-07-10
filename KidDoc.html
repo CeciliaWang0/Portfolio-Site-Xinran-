@@ -15,9 +15,9 @@
 
 	<header>
 		<div class="container">
-			<div id="navigation">
+			<div class="navtoggle" id="myNavtoggle">
 				<div >
-					<a href="index.html"><img class="logo" src="images/home/Sitelogo.png"></a>
+					<a href="index.html"><img class="logo" src="images/home/Sitelogo.png" alt="Cecilia Wang logo"></a>
 				</div>
 				<div>
 					<nav>
@@ -25,6 +25,7 @@
 							<li><a href="index.html">Work</a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="#contact">Contact</a></li>
+							<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -37,7 +38,7 @@
 		<div id="project1-hero">
 		<div class="container">
 			<div> <!-- Title and intro -->
-				<h2>KidDoc</h2>
+				<h2 class="title">KidDoc</h2>
 				<h3>A mobile-first design of consultation service for children’s health</h3>
 			</div>
 			<div class="row"> <!-- Project overview -->
@@ -56,12 +57,12 @@
 
 			<div class="row"> <!-- Project info -->
 				<div class="col-md-6 col-lg-6 col-xl-6">
-					<h2>Deliverables:</h2>
+					<h2>📚Deliverables:</h2>
 					<h4>Competitive analysis• User surveys and interviews • User personas• Journey mapping• User flow• Information architecture• Wireframing• Prototyping• Usability testing• UI design </h4>
 				</div>
 
 				<div class="col-md-6 col-lg-6 col-xl-6">
-					<h2>Tools:</h2> 
+					<h2>✒️Tools:</h2> 
 					<h4>Figma• Optimal Workshop• Adobe creative suite• UsabilityHub• Zoom• Miro• Google forms• Google sheets</h4>				
 				</div>
 			</div>
@@ -203,7 +204,7 @@
 			        </picture>      
 		        </div>
 		        <div>
-		        <a href="https://www.figma.com/proto/E12MKemoFT3UCZqWkT7Y7t/KidDoc-Prototype.V6?node-id=841%3A150&page-id=0%3A1&scaling=scale-down">Link to prototype</a>
+		        <a href="https://www.figma.com/proto/E12MKemoFT3UCZqWkT7Y7t/KidDoc-Prototype.V6?node-id=841%3A150&page-id=0%3A1&scaling=scale-down">🔗Link to prototype</a>
 		        </div>
 		    </div>
 
@@ -219,13 +220,13 @@
 
 
 	<br>
-	<!-- start of footer section -->
 
-	<footer id="contact">
+	<footer id="contact"> <!-- start of footer section -->
 		<div class="container">
 		<h2>Let's work together</h2>
 		<h3>Contact me at</h3> 
 		<a href="mailto:ceciliawangdesign1@gmail.com" class="email-link">ceciliawangdesign1@gmail.com</a>
+		<div class="footernote">
 		<div class="social-icons">
 		<ul>
 			<!-- linkedin icon -->
@@ -242,13 +243,14 @@
 			</li>
 		</ul>
 		</div>
-		<p> © Cecilia Wang Design 2022 </p>
+		<p class="copyright"> © Cecilia Wang Design 2022 </p>
 		</div>
-	</footer>
+		</div>
+	</footer> <!-- end of footer section -->
 
-<!-- end of footer section -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="javascript/scripts.js"></script>
-
 
 </body>
 </html>

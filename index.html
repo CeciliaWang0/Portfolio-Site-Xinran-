@@ -15,9 +15,9 @@
 
 	<header>
 		<div class="container">
-			<div id="navigation">
+			<div class="navtoggle" id="myNavtoggle">
 				<div >
-					<a href="index.html"><img class="logo" src="images/home/Sitelogo.png"></a>
+					<a href="index.html"><img class="logo" src="images/home/Sitelogo.png" alt="Cecilia Wang logo"></a>
 				</div>
 				<div>
 					<nav>
@@ -25,6 +25,7 @@
 							<li><a href="">Work</a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="#contact">Contact</a></li>
+							<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -36,9 +37,8 @@
 		<div id="index-hero" >
 				<div class="container">
 				<div>
-					<h1>Hi! I am Cecilia Wang<br>A UX designer and thinker who focuses on simplicity and clarity.</h1>
+					<h1>Hi! I am Cecilia Wang.<br>A UX designer and thinker who focuses on simplicity and clarity.</h1>
 				</div>
-				<br>
 
 			    <!-- start of work section -->
 			    
@@ -79,17 +79,17 @@
 					</div>
 				</div>		
 			</div>
-		</div>		<!-- end of work section -->
+		</div><!-- end of work section -->
 	</main>
 
 	<br>
-	<!-- start of footer section -->
-
-	<footer id="contact">
+	
+	<footer id="contact"> <!-- start of footer section -->
 		<div class="container">
 		<h2>Let's work together</h2>
 		<h3>Contact me at</h3> 
 		<a href="mailto:ceciliawangdesign1@gmail.com" class="email-link">ceciliawangdesign1@gmail.com</a>
+		<div class="footernote">
 		<div class="social-icons">
 		<ul>
 			<!-- linkedin icon -->
@@ -106,11 +106,12 @@
 			</li>
 		</ul>
 		</div>
-		<p> © Cecilia Wang Design 2022 </p>
+		<p class="copyright"> © Cecilia Wang Design 2022 </p>
 		</div>
-	</footer>
+		</div>
+	</footer> <!-- end of footer section -->
 
-<!-- end of footer section -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="javascript/scripts.js"></script>
 </body>
 </html>
