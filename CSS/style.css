@@ -42,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.83em;
+  font-size: 1.73em;
   font-weight: 600;
 }
 
@@ -51,8 +51,14 @@ h3 {
   font-weight: 400;
 }
 h4 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
+}
+
+#index-hero h1 {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: 400;
+    font-size: 1.9em;
 }
 
 
@@ -73,6 +79,12 @@ a:hover {
 a:active {
   color: #8276F4;
   text-decoration: underline;
+  font-weight: 700;
+}
+
+a.current-page{
+  color: #8276F4;
+  text-decoration: none;
   font-weight: 700;
 }
 
@@ -99,7 +111,6 @@ a:active {
 
 /* ---------------Email link styling ---------------------*/
 
-#contact h3 { font-size:1.2em;}
 
 .email-link {
   background-color: transparent;
@@ -119,7 +130,7 @@ a:active {
 /* ---------------Layout styling---------------------*/
 
 .container {
-  max-width: 1200px;
+  max-width: 1180px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -129,7 +140,7 @@ a:active {
 }
 
 main {
-  padding-top: 190px;
+  padding-top: 130px;
 }
 
 
@@ -210,6 +221,9 @@ nav ul li a {
 
 
 /* --------------- Hero section---------------------*/
+#intro img{
+  max-width: 100px;
+}
 
 #contact-hero .resume-button {
   padding: 40px 0px;
@@ -217,7 +231,9 @@ nav ul li a {
 #contact-hero img {
   padding: 0px 40px 0px 0px;
 } 
-
+#final h3 {
+  text-align: center;
+}
 
 /* ---------------Footer ---------------------*/
 
@@ -246,6 +262,10 @@ footer ul li {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+main {
+  padding-top: 190px;
+}
 
 #project1-hero h1{
   text-align: center;
@@ -284,10 +304,18 @@ nav ul li{
   width: 50%;
 }
 
-  #index-hero h1 {
+#intro {
+  padding-top: 20px;
+  padding-bottom: 37px;
+}
+
+#index-hero h1 {
+  font-size: 2.9em;
+}
+
+#intro img{
   padding-top: 35px;
-  padding-bottom: 15px;
-  font-size: 3em;
+  max-width: 140px;
 }
 
   #contact h3 {
@@ -305,6 +333,37 @@ nav ul li{
   float: right;
 }
 
+#contact h3 { 
+  font-size:1.7em;
+}
+
+.email-link { 
+  font-size:1.7em;
+  text-decoration: underline;
+}
+#skills{
+  padding-bottom: 45px;
+}
+
+#skills h3{
+  font-size: 1.73em;
+  font-weight: 600;
+}
+#skills ul 
+{
+  font-size: 1.3em;
+}
+#user-research .insights{
+  font-weight: 600;
+  text-align: center;
+}
+.navtoggle.responsive nav{
+padding: 0px 0 0;
+}
+.navtoggle.responsive li {
+border-top: 1px solid transparent;
+padding: 0px 0;
+}
 }
 
 /* ==============================
@@ -319,6 +378,13 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 41.66%;
   }  
+  .col-lg-2 {
+    width: 16.6%;
+  }  
+  .col-lg-10 {
+    width: 83.4%;
+  }  
+
   #contact-hero h1 { margin-top: 0;}
 
   .footernote {
@@ -328,6 +394,7 @@ Large devices (1024px or larger)
     justify-content: space-between;
   } 
 
+  #contact .h3 {font-size: 13em;} 
 
 }
 
