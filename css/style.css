@@ -411,7 +411,7 @@ Large devices (1024px or larger)
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: spaces-between;
+    justify-content: space-between;
   }
 
   #contact .h3 {
